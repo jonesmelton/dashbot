@@ -10,7 +10,7 @@ Thread.abort_on_exception = true
 
 Thread.new do
   begin
-    DashBot::bot.run
+    DashBot::Bot.run
   rescue Exception => e
     STDERR.puts "Error #{e}"
     STDERR.puts e.backtrace
