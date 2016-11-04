@@ -1,6 +1,6 @@
-class Parser
+module Parser
 
-  def self.split_input(data)
+  def split_input(data)
     input = data.split(" ")
     {command: input[1],
      phase: input[2],

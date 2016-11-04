@@ -4,8 +4,8 @@ module DashBot
     class Announce < SlackRubyBot::Commands::Base
       command 'announce' do |client, data, _match|
         puts "data\n⬇️\n⬇️"
-        # p split_input(data[:text])
-        client.say(channel: data.channel, text: data)       
+        message = Dispatcher.new(data.text)
+        client.say(channel: data.channel, text: message)
       end
     end
   end
