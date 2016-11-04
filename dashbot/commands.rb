@@ -1,5 +1,4 @@
 # coding: utf-8
-require_relative 'parsers'
 module DashBot
   module Commands
     class Announce < SlackRubyBot::Commands::Base
