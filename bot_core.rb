@@ -1,4 +1,5 @@
 require 'slack-ruby-bot'
+require_relative 'bot_config'
 require_relative 'dashbot/parser'
 require 'dashbot/dispatcher'
 require 'dashbot/commands'
